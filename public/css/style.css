@@ -2,6 +2,10 @@ html{
   font-family: Arial;
 }
 nav {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
   background-color: #001f3f;
 }
 
@@ -26,8 +30,8 @@ nav a.active {
   color: white;
 }
 
-
 #content{
+  padding-top: 50px;
   min-height: 500px;
   background-color: #f2f2f2;
 }
