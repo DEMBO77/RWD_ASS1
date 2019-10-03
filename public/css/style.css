@@ -1,23 +1,45 @@
+html{
+  font-family: Arial;
+}
 nav {
-  overflow: hidden;
-  background-color: #303030;
+  background-color: #001f3f;
 }
 
 nav a {
-  float: left;
-  color: #f2f2f2;
+  display: inline-block;
+  color: #FF851B;
   text-align: center;
   padding: 20px 20px;
   text-decoration: none;
   font-size: 20px;
+  transition: 450ms;
+  -webkit-transition: 450ms;
 }
 
 nav a:hover {
-  background-color: #d0d0d0;
-  color: black;
+  background-color: #FF851B;
+  color: #001f3f ;
 }
 
 nav a.active {
   background-color: #4CAF50;
   color: white;
+}
+
+
+#content{
+  min-height: 500px;
+  background-color: #f2f2f2;
+}
+
+footer{
+  background-color: #001f3f;
+  color: lightgrey;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer div{
+  font-size: small;
 }
