@@ -2,7 +2,7 @@ html{
   font-family: "Arial";
   font-size: 0.85em;
 }
-nav {
+header nav {
   z-index: 9999;
   top: 0;
   left: 0;
@@ -11,7 +11,7 @@ nav {
   background-color: #001f3f;
 }
 
-nav a {
+header  nav a {
   display: inline-block;
   color: #FF851B;
   text-align: center;
@@ -26,17 +26,18 @@ nav a {
   border-top: 5px solid #FF851B;
 }
 
-nav a:hover {
+header nav a:hover {
   background-color: #FF851B;
   color: #001f3f ;
 }
 
-nav a.active {
+header nav a.active {
   background-color: #4CAF50;
   color: white;
 }
 
 #content{
+  margin-top: 100px;
   padding: 70px;
   min-height: 500px;
   background-color: white;
@@ -112,3 +113,68 @@ footer a{
   padding: 5%;
   margin: auto;
 }
+
+#schedule table{
+  width: 80%;
+  margin: auto;
+  margin-bottom: 5%;
+}
+
+#schedule table td, #schedule table th{
+  padding: 15px;
+  border: 1px solid lightgrey;
+  text-align: justify;
+}
+#schedule tbody tr{
+  transition: 300ms;
+}
+#schedule tbody tr:nth-child(even){
+  background-color: #EFEFEF;
+  transition: 300ms;
+}
+
+#schedule tbody tr:nth-child(even):hover{
+  background-color: gray;
+  font-weight: bold;
+  color: white;
+}
+
+#schedule tbody tr:hover{
+  font-weight: bold;
+  background-color: gray;
+  color: white;
+}
+#schedule h3{
+  text-align: center;
+}
+#schedule_nav{
+  padding: 15px;
+  width: 80%;
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  background-color: #EFEFEF;
+  border-radius: 5px;
+  margin-bottom: 100px;
+}
+
+#schedule_nav a{
+  display: inline-block;
+  padding: 20px;
+  width: 32%;
+  text-align: center;
+  text-decoration: none;
+  font-size: large;
+  color: #001f3f;
+  border-bottom: 3px solid lightgrey;
+  transition: 200ms;
+  margin-left: 1%;
+}
+
+#schedule_nav a:hover{
+  color: #FF851B;
+  border-bottom: 3px solid #FF851B;
+}
+
+
+
