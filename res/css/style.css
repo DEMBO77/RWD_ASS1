@@ -48,12 +48,54 @@ header nav a.active {
   border-radius: 4px;
   padding: 20px;
   background-color: #EFEFEF;
+  border-radius: 5px;
 }
+
+.content_box:hover {
+  background-color: #CCCCFF;
+  transition: 450ms;
+  -webkit-transition: 450ms;
+}
+
+.content_box a {
+  text-decoration: none; 
+}
+
+.content_box ul {
+	list-style: none
+}
+
+.content_box ul li:before {
+  content: "✓"; 
+  color: green;
+  display: inline-block; 
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  margin-left: -20px;
+}
+
+.content_box ul li:hover {
+  box-sizing: padding-box;
+  transition: 450ms;
+  -webkit-transition: 450ms;
+  margin-left: 20px;
+}
+
+.content_box a:hover {
+  background-color: #FFFFFF;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 450ms;
+  -webkit-transition: 450ms;
+}
+
  h3{
    margin-bottom: 30px;
  }
+ 
 footer{
-  background-color: #001f3f;
+  background-color: #001F3F;
   color: lightgrey;
   padding: 20px;
   display: flex;
@@ -125,9 +167,11 @@ footer a{
   border: 1px solid lightgrey;
   text-align: justify;
 }
+
 #schedule tbody tr{
   transition: 300ms;
 }
+
 #schedule tbody tr:nth-child(even){
   background-color: #EFEFEF;
   transition: 300ms;
@@ -144,9 +188,11 @@ footer a{
   background-color: gray;
   color: white;
 }
+
 #schedule h3{
   text-align: center;
 }
+
 #schedule_nav{
   padding: 15px;
   width: 80%;
