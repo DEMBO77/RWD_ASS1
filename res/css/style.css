@@ -51,6 +51,7 @@ footer{
   flex-direction: row;
   justify-content: space-between;
 }
-footer div{
+
+footer article aside{
   font-size: small;
 }
