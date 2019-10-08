@@ -294,7 +294,13 @@ footer a{
   width: 50%;
   padding: 20px;
 }
-
+#audio_ms{
+  position: center;
+  padding-bottom: 50px;
+}
+#audio_ms audio{
+  padding-left: 620px;
+}
 #articleIndex img {
   width: 100%;
 }
