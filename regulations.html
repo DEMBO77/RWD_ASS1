@@ -6,7 +6,7 @@
         <link href="res/css/style.css" type="text/css" rel="stylesheet"/>
     </head>
     <body>
-		<header>
+		<header id="bookmark">
 			<nav>
 				<a href="index.html"><img src="res/images/favicon.png"></a>
 				<a href="exams.html">Exam types</a>
@@ -20,7 +20,22 @@
 		<div id="content">
 				
 			<!-- START: Adam -->
-			<div class="content_box">
+			
+			<a href="#bookmark">
+				<div id="return_to_top">Up</div>
+			</a>
+			
+			<div class="content_box ">
+				<h3>Bookmark</h3>
+				<ol class="bookmark">
+					<li><a href="#handing">Handing in the exam</a></li>
+					<li><a href="#ilness">Ilness before the exam</a></li>
+					<li><a href="#regulations">Examination regulations</a></li>
+				<ol>
+			</div>
+			
+			<div class="content_box" id="handing">
+			
 				<h3>Handing in the exam</h3>
 				<ul>
 					<li>The cover sheet has to be signed by you</li>
@@ -30,7 +45,7 @@
 				</ul>
 			</div>
 			
-			<div class="content_box">
+			<div class="content_box" id="ilness">
 				<h3>Ilness before or during the exam</h3>
 				<ul>
 					<li>If you fall ill before an exam you must immediately inform the Study Administration and consult a doctor in order to provide documentation of the illness.</li>
@@ -41,7 +56,7 @@
 				</ul>
 			</div>
 
-			<div class="content_box">
+			<div class="content_box" id="regulations">
 				<h3>Examination regulations</h3>
 				<ul>
 					<li>The evaluation form for a course is specified in the course description for the individual courses.</li>

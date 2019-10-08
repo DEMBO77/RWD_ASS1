@@ -6,7 +6,7 @@
         <link href="res/css/style.css" type="text/css" rel="stylesheet"/>
     </head>
     <body>
-		<header>
+		<header id="bookmark">
 			<nav>
 				<a href="index.html"><img src="res/images/favicon.png"></a>
 				<a href="exams.html">Exam types</a>
@@ -20,7 +20,22 @@
 		<div id="content">
 		
 			<!-- START: Adam -->
+			
+			<a href="#bookmark">
+				<div id="return_to_top">Up</div>
+			</a>
+			
 			<div class="content_box">
+				<h3>Bookmark</h3>
+				<ol class="bookmark">
+					<li><a href="#facts">Facts the exam</a></li>
+					<li><a href="#rules">Rules during the exam</a></li>
+					<li><a href="#cheating">Cheating during the exam</a></li>
+					<li><a href="#regulations">Rules and regulations</a></li>
+				<ol>
+			</div>
+			
+			<div class="content_box" id="facts">
 				<h3>​​​​​​​​​​​​​​​​​​​​​Facts about Exams</h3>
 				<ul>
 					<li>You have max. three attempts for each exam</li>
@@ -36,7 +51,7 @@
 				</ul>
 			</div>
 	
-			<div class="content_box">
+			<div class="content_box" id="rules">
 				<h3>Rules during the exam</h3>
 				<ul>
 					<li>Smoking is not allowed!</li>
@@ -48,7 +63,7 @@
 				</ul>
 			</div>
 			
-			<div class="content_box">
+			<div class="content_box" id="cheating">
 				<h3>Cheating in exam</h3>
 				<ul>
 					<li>If you receive or give another examinee help during the exam you will be suspended from the exam and have used 1 examination attempt.</li>
@@ -56,7 +71,7 @@
 				</ul>
 			</div>
 		
-			<div class="content_box">
+			<div class="content_box" id="regulations">
 				<h3>Exam Rules and Regulations </h3>
 				
 				<p>See exam rules and regulations for Software Engineering here <a href="https://studienet.via.dk/sites/uddannelse/ict/horsens/studymaterial/Pages/default.aspx">ICT Curriculum.</a></p>
