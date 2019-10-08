@@ -43,6 +43,10 @@ header nav a.active {
   background-color: white;
 }
 
+.content_box:nth-child(even):hover {
+	background-color: #99CC99;
+}
+
 .content_box {
   margin: 10px;
   border-radius: 4px;
@@ -67,6 +71,7 @@ header nav a.active {
 
 .content_box ul li:before {
   content: "✓"; 
+  font-size: 20px;
   color: green;
   display: inline-block; 
   width: 20px;
