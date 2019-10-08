@@ -286,3 +286,7 @@ aside section {
 aside img {
   width: 100%;
 }
+
+nav img {
+  width: 20px;
+}
