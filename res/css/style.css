@@ -2,6 +2,8 @@ html{
   font-family: "Arial";
   font-size: 0.85em;
 }
+
+
 header nav {
   z-index: 9999;
   top: 0;
@@ -11,7 +13,8 @@ header nav {
   background-color: #001f3f;
 }
 
-header  nav a {
+/* Adam */
+header nav a {
   display: inline-block;
   color: #FF851B;
   text-align: center;
@@ -26,11 +29,13 @@ header  nav a {
   border-top: 5px solid #FF851B;
 }
 
+/* Adam */
 header nav a:hover {
   background-color: #FF851B;
   color: #001f3f ;
 }
 
+/* Adam */
 header nav a.active {
   background-color: #4CAF50;
   color: white;
@@ -43,10 +48,12 @@ header nav a.active {
   background-color: white;
 }
 
+/* Adam */
 .content_box:nth-child(even):hover {
 	background-color: #99CC99;
 }
 
+/* Adam */
 .content_box {
   margin: 10px;
   border-radius: 4px;
@@ -55,20 +62,24 @@ header nav a.active {
   border-radius: 5px;
 }
 
+/* Adam */
 .content_box:hover {
   background-color: #CCCCFF;
   transition: 450ms;
   -webkit-transition: 450ms;
 }
 
+/* Adam */
 .content_box a {
   text-decoration: none; 
 }
 
+/* Adam */
 .content_box ul {
 	list-style: none
 }
 
+/* Adam */
 .content_box ul li:before {
   content: "✓"; 
   font-size: 20px;
@@ -80,13 +91,14 @@ header nav a.active {
   margin-left: -20px;
 }
 
+/* Adam */
 .content_box ul li:hover {
-  box-sizing: padding-box;
   transition: 450ms;
   -webkit-transition: 450ms;
   margin-left: 20px;
 }
 
+/* Adam */
 .content_box a:hover {
   background-color: #FFFFFF;
   padding: 10px;
