@@ -156,40 +156,40 @@ footer a{
   margin: auto;
 }
 
-#schedule table{
+#schedule table,#exam_types table{
   width: 80%;
   margin: auto;
   margin-bottom: 5%;
 }
 
-#schedule table td, #schedule table th{
+#schedule table td, #schedule table th, #exam_types table td, #exam_types table th{
   padding: 15px;
   border: 1px solid lightgrey;
   text-align: justify;
 }
 
-#schedule tbody tr{
+#schedule tbody tr , #exam_types tbody tr{
   transition: 300ms;
 }
 
-#schedule tbody tr:nth-child(even){
+#schedule tbody tr:nth-child(even), #exam_types tbody tr:nth-child(even){
   background-color: #EFEFEF;
   transition: 300ms;
 }
 
-#schedule tbody tr:nth-child(even):hover{
+#schedule tbody tr:nth-child(even):hover, #exam_types tbody tr:nth-child(even):hover{
   background-color: gray;
   font-weight: bold;
   color: white;
 }
 
-#schedule tbody tr:hover{
+#schedule tbody tr:hover, #exam_types tbody tr:hover{
   font-weight: bold;
   background-color: gray;
   color: white;
 }
 
-#schedule h3{
+#schedule h3, #exam_types h3{
   text-align: center;
 }
 
@@ -222,5 +222,16 @@ footer a{
   border-bottom: 3px solid #FF851B;
 }
 
+#exam_types table{
+  text-align: center;
+}
 
+#exam_types{
+  margin-top: 100px;
+}
+
+#exam_types img{
+  width: 30px;
+  height: 30px;
+}
 
