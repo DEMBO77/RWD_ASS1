@@ -1,9 +1,10 @@
+/* Christian */
 html{
   font-family: "Arial";
   font-size: 0.85em;
 }
 
-
+/* Adam */
 header nav {
   z-index: 9999;
   top: 0;
@@ -25,6 +26,7 @@ header nav a {
   -webkit-transition: 450ms;
 }
 
+/* Christian */
 .myPage{
   border-top: 5px solid #FF851B;
 }
@@ -137,10 +139,11 @@ header nav a.active {
   background-color: #CC3300;
 }
 
+/* Christian */
  h3{
    margin-bottom: 30px;
  }
- 
+/* Christian */
 footer{
   background-color: #001F3F;
   color: lightgrey;
@@ -150,15 +153,18 @@ footer{
   justify-content: space-between;
 }
 
+/* Christian */
 footer article aside{
   font-size: small;
 }
 
+/* Christian */
 footer a{
   text-decoration: none;
   color: lightgrey;
 }
 
+/* Christian */
 #contact label{
   width: 50%;
   margin-bottom: 5%;
@@ -166,6 +172,7 @@ footer a{
   flex-direction: column;
 }
 
+/* Christian */
 #contact input{
   margin-top: 8px;
   height: 35px;
@@ -173,11 +180,13 @@ footer a{
   padding: 5px;
 }
 
+/* Christian */
 #contact textarea{
   margin-top: 8px;
   height: 150px;
 }
 
+/* Christian */
 .submit{
   margin-top: 20px;
   background-color: #4CAF50; /* Green */
@@ -192,54 +201,64 @@ footer a{
   -webkit-transition: 200ms;
 }
 
+/* Christian */
 .submit:hover{
   color: white;
   background-color: darkgreen;
 }
 
+/* Christian */
 #contact{
   width: 90%;
   padding: 5%;
   margin: auto;
 }
 
+/* Christian */
 #schedule table,#exam_types table{
   width: 80%;
   margin: auto;
   margin-bottom: 5%;
 }
 
+/* Christian */
 #schedule table td, #schedule table th, #exam_types table td, #exam_types table th{
   padding: 15px;
   border: 1px solid lightgrey;
   text-align: justify;
 }
 
+/* Christian */
 #schedule tbody tr , #exam_types tbody tr{
   transition: 300ms;
 }
 
+/* Christian */
 #schedule tbody tr:nth-child(even), #exam_types tbody tr:nth-child(even){
   background-color: #EFEFEF;
   transition: 300ms;
 }
 
+/* Christian */
 #schedule tbody tr:nth-child(even):hover, #exam_types tbody tr:nth-child(even):hover{
   background-color: gray;
   font-weight: bold;
   color: white;
 }
 
+/* Christian */
 #schedule tbody tr:hover, #exam_types tbody tr:hover{
   font-weight: bold;
   background-color: gray;
   color: white;
 }
 
+/* Christian */
 #schedule h3, #exam_types h3{
   text-align: center;
 }
 
+/* Christian */
 #schedule_nav{
   padding: 15px;
   width: 80%;
@@ -251,6 +270,7 @@ footer a{
   margin-bottom: 100px;
 }
 
+/* Christian */
 #schedule_nav a{
   display: inline-block;
   padding: 20px;
@@ -264,23 +284,29 @@ footer a{
   margin-left: 1%;
 }
 
+/* Christian */
 #schedule_nav a:hover{
   color: #FF851B;
   border-bottom: 3px solid #FF851B;
 }
 
+/* Remi */
 #exam_types table{
   text-align: center;
 }
 
+/* Remi */
 #exam_types{
   margin-top: 130px;
 }
 
+/* Remi */
 #exam_types img{
   width: 28px;
   height: 28px;
 }
+
+/* Remi */
 #exam_types th{
   font-size:  16px;
 }
@@ -295,19 +321,24 @@ footer a{
   text-align: justify;
 }
 
+/* Adrien */
  #articleIndex {
    width: 50%;
    min-width: 350px;
    padding: 20px;
    background-color: #EFEFEF;
 }
+/* Remi */
 #audio_ms{
   position: center;
   padding-bottom: 50px;
 }
+/* Remi */
 #audio_ms audio{
   padding-left: 620px;
 }
+
+/* Adrien */
 #articleIndex img {
   width: 100%;
   height: 300px;
@@ -315,7 +346,7 @@ footer a{
 }
 
 
-
+/* Adrien */
 #contentIndex aside {
   width: 40%;
   display: flex;
@@ -323,7 +354,7 @@ footer a{
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
+/* Adrien */
 #contentIndex aside div{
   background-color: #EFEFEF;
   padding: 20px;
@@ -334,21 +365,26 @@ footer a{
   align-items: center;
 }
 
+/* Adrien */
 #contentIndex aside table{
   width: 90%;
   text-align: justify;
   margin-top: 30px;
 
 }
+
+/* Adrien */
 #contentIndex aside img {
   width: 400px;
   height: 200px;
 }
 
+/* Adam */
 nav img {
   width: 20px;
 }
 
+/* Christian */
 #creator_images{
   display: flex;
   flex-direction: row;
@@ -357,12 +393,13 @@ nav img {
   text-align: center;
 }
 
+/* Christian */
 #creator_images a{
   display: inline-block;
   text-decoration: none;
   color: #FF851B;
 }
-
+/* Christian */
 #creator_images img{
   width: 100px;
   height: 100px;
@@ -371,7 +408,7 @@ nav img {
   transition: 200ms;
   -webkit-transition: 200ms;
 }
-
+/* Christian */
 #creator_images img:hover{
   border-color: #FF851B;
 }
