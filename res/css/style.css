@@ -23,12 +23,65 @@ nav a.active {
 
 
 /* Adam */
+.content_box:nth-child(even):hover {
+	background-color: lightsalmon;
+}
+
+/* Adam */
+.content_box {
+  margin: 10px;
+  border-radius: 4px;
+  padding: 20px;
+  background-color: #EFEFEF;
+  border-radius: 5px;
+}
+
+/* Adam */
+.content_box:hover {
+  background-color: #CCCCFF;
+  transition: 450ms;
+  -webkit-transition: 450ms;
+}
+
+/* Adam */
+.content_box a {
+  text-decoration: none; 
+}
+
+/* Adam */
+.content_box ul {
+	list-style: none
+}
+
+/* Adam */
+.content_box ul li:before {
+  content: "✓"; 
+  font-size: 20px;
+  color: green;
+  display: inline-block; 
+  width: 20px;
+  height: 20px;
+  padding: 20px;
+  margin-left: -20px;
+}
+
+/* Adam */
+.content_box a:hover {
+  background-color: #FFFFFF;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 450ms;
+  -webkit-transition: 450ms;
+}
+
+/* Adam */
 .bookmark a {
   color: black;
   text-decoration: none;
   font-size: 20px;
 }
 
+/* Adam */
 .bookmark li{
   margin-bottom: 15px;
 }
@@ -36,10 +89,10 @@ nav a.active {
 /* Adam */
 #return_to_top {
 	background-color: #FF851B;
-	right: 5%;
-	bottom: 5%;
-	border-radius: 25%;
-	padding: 5%;
+	border-radius: 10px;
+	padding: 25px;
+	bottom: 15px;
+	right: 15px;
 	position: fixed;
 }
 
