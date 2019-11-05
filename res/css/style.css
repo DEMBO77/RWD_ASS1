@@ -21,3 +21,32 @@ nav a.active {
   background-color: #4CAF50;
   color: white;
 }
+
+
+/* Adam */
+.bookmark a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.bookmark li{
+  margin-bottom: 15px;
+}
+
+/* Adam */
+#return_to_top {
+	background-color: #FF851B;
+	right: 5%;
+	bottom: 5%;
+	border-radius: 25%;
+	padding: 5%;
+	position: fixed;
+}
+
+/* Adam */
+#return_to_top:hover {
+  transition: 450ms;
+  -webkit-transition: 450ms;
+  background-color: #CC3300;
+}
