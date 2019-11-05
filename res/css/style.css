@@ -8,7 +8,6 @@ nav a {
   transition: 450ms;
   -webkit-transition: 450ms;
 }
-
 /* Adam */
 nav a:hover {
   background-color: #FF851B;
@@ -110,6 +109,11 @@ nav a.active {
 /*Christian*/
 #content{
   margin-top: 100px;
-<<<<<<< HEAD
 }
+
+/*christian*/
+#exam_types nav, #schedule nav{
+    background-color: lightgrey;
+}
+
 
