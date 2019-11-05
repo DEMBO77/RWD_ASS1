@@ -103,12 +103,13 @@ nav a.active {
 }
 
 /*Christian*/
-#exam_types img{
+#exam_types table img{
   width: 20px;
 }
 /*Christian*/
 #content{
-  margin-top: 100px;
+  margin-top: 150px;
+    margin-bottom: 150px;
 }
 
 /*christian*/
@@ -116,4 +117,11 @@ nav a.active {
     background-color: lightgrey;
 }
 
+#exam_types tbody tr, #schedule tbody tr{
+    transition: 250ms;
+}
+#exam_types tbody tr:hover, #schedule tbody tr:hover{
+    background-color: grey;
+    color: white;
+}
 
