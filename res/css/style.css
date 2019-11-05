@@ -43,6 +43,13 @@ nav a.active {
 }
 
 /* Adam */
+.content_box ul li:hover {
+  transition: 450ms;
+  -webkit-transition: 450ms;
+  margin-left: 20px;
+}
+
+/* Adam */
 .content_box a {
   text-decoration: none; 
 }

@@ -15,98 +15,100 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
-        <a class="navbar-brand border-bottom border-dark" href="index.html"><img src="res/images/favicon.png" alt="icon"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a href="exams.html" class="nav-link text-left p-2 border-bottom border-dark">Exam types</a></li>
-                <li class="nav-item"><a href="schedule.html" class="nav-link text-left p-2 border-bottom border-dark">Schedule</a></li>
-                <li class="nav-item"><a href="regulations.html" class="nav-link text-left p-2 border-bottom border-dark">Regulations</a></li>
-                <li class="nav-item"><a href="rules.html" class="nav-link text-left p-2 border-bottom border-dark">Rules</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link text-left p-2 border-bottom border-dark">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <header>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+            <a class="navbar-brand border-bottom border-dark" href="index.html"><img src="res/images/favicon.png" alt="icon"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="exams.html" class="nav-link text-left p-2 border-bottom border-dark">Exam types</a></li>
+                    <li class="nav-item"><a href="schedule.html" class="nav-link text-left p-2 border-bottom border-dark">Schedule</a></li>
+                    <li class="nav-item"><a href="regulations.html" class="nav-link text-left p-2 border-bottom border-dark">Regulations</a></li>
+                    <li class="nav-item"><a href="rules.html" class="nav-link text-left p-2 border-bottom border-dark">Rules</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link text-left p-2 border-bottom border-dark">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
     <div id="content">
-        <section id="contentIndex">
-            <article id="articleIndex">
-                <div>
-                    <img src="res/images/examImage.jpeg" alt="viaschedule">
+        <div class="container-fluid col-md-11 m-auto text-justify">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="res/images/examImage.jpeg" alt="via schedule" class="img-fluid">
                     <div>
                         <h2>About the Viaschedule</h2>
                         <p>Viaschedule is a platform related to exams in via. The exams period bring so much pressure to students in VIA, and some of you might be
                             new in the school.
-                        Viaschedule is the platform that gives you tips, time schedule in ICT, Global Business and Architecture with the given type of exam, and th class.
+                            Viaschedule is the platform that gives you tips, time schedule in ICT, Global Business and Architecture with the given type of exam, and th class.
                         </p>
                     </div>
                     <div>
                         <h2>Actualities</h2>
                         <p>The schedule will be uptodate the 02/11/2019 according to some modifications in the system.
-                        However, be prepared to start your exam the 01/01/2020.</p>
+                            However, be prepared to start your exam the 01/01/2020.</p>
                     </div>
                 </div>
-
-            </article>
-            <aside>
-                <h2>Next Exams</h2>
-                <div>
-                    <img src="res/images/ICT.png" alt="ICT">
-                    <table cellspacing="0">
-                        <thead>
-                        <tr>
-                            <th>Day</th>
-                            <th>Subject</th>
-                            <th>Class</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>01/01/2020</td><td>RWD</td><td>A.303</td>
-                        </tr>
-                        </tbody>
-                    </table>
+                <div class="col-lg-6">
+                    <h2>Next Exams</h2>
+                    <div class="d-flex flex-column flex-lg-row flex-wrap bg-light rounded">
+                        <div class="col-lg-6">
+                            <img src="res/images/ICT.png" alt="ICT" class="img-fluid">
+                            <table class="table table-responsive">
+                                <thead>
+                                <tr>
+                                    <th>Day</th>
+                                    <th>Subject</th>
+                                    <th>Class</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>01/01/2020</td><td>RWD</td><td>A.303</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="res/images/business.jpg" alt="Global Business" class="img-fluid">
+                            <table class="table table-responsive">
+                                <thead>
+                                <tr>
+                                    <th>Day</th>
+                                    <th>Subject</th>
+                                    <th>Class</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>01/01/2020</td><td>MST</td><td>E.303</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="res/images/civil%20engineering.jpg" alt="Civil Engineering" class="img-fluid">
+                            <table class="table table-responsive">
+                                <thead>
+                                <tr>
+                                    <th>Day</th>
+                                    <th>Subject</th>
+                                    <th>Class</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>01/01/2020</td><td>MST</td><td>E.303</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img src="res/images/business.jpg" alt="Global Business">
-                    <table cellspacing="0">
-                        <thead>
-                        <tr>
-                            <th>Day</th>
-                            <th>Subject</th>
-                            <th>Class</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>01/01/2020</td><td>MST</td><td>E.303</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div>
-                    <img src="res/images/civil%20engineering.jpg" alt="Architecture">
-                    <table cellspacing="0">
-                        <thead>
-                        <tr>
-                            <th>Day</th>
-                            <th>Subject</th>
-                            <th>Class</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>01/01/2020</td><td>STD</td><td>E.303</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-            </aside>
-        </section>
+            </div>
+        </div>
     </div>
 
 
@@ -132,6 +134,6 @@
                 <p>&copy; 2019	OurWebSite, Inc</p>
             </section>
         </div>
-
-    </footer></body>
+    </footer>
+</body>
 </html>
