@@ -29,7 +29,6 @@ nav a.active {
 /* Adam */
 .content_box {
   margin: 10px;
-  border-radius: 4px;
   padding: 20px;
   background-color: #EFEFEF;
   border-radius: 5px;
@@ -125,7 +124,7 @@ nav a.active {
 }
 
 #exam_types tbody tr, #schedule tbody tr{
-    transition: 250ms;
+    transition: 50ms;
 }
 #exam_types tbody tr:hover, #schedule tbody tr:hover{
     background-color: grey;
