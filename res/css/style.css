@@ -3,7 +3,6 @@ nav a {
   display: inline-block;
   color: #FF851B;
   text-align: center;
-  padding: 20px 20px;
   text-decoration: none;
   font-size: 20px;
   transition: 450ms;
@@ -49,4 +48,13 @@ nav a.active {
   transition: 450ms;
   -webkit-transition: 450ms;
   background-color: #CC3300;
+}
+
+/*Christian*/
+#exam_types img{
+  width: 20px;
+}
+/*Christian*/
+#content{
+  margin-top: 100px;
 }
