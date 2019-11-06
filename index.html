@@ -11,110 +11,172 @@
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
 	<script src="res/js/bootstrap.js"></script>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
-            <a class="navbar-brand border-bottom border-dark" href="index.html"><img src="res/images/favicon.png" alt="icon"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a href="exams.html" class="nav-link text-left p-2 border-bottom border-dark">Exam types</a></li>
-                    <li class="nav-item"><a href="schedule.html" class="nav-link text-left p-2 border-bottom border-dark">Schedule</a></li>
-                    <li class="nav-item"><a href="regulations.html" class="nav-link text-left p-2 border-bottom border-dark">Regulations</a></li>
-                    <li class="nav-item"><a href="rules.html" class="nav-link text-left p-2 border-bottom border-dark">Rules</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link text-left p-2 border-bottom border-dark">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <a class="navbar-brand" href="index.html"><img src="res/images/favicon.png" alt="icon"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="exams.html" class="nav-link text-left p-2">Exam types</a></li>
+                <li class="nav-item"><a href="schedule.html" class="nav-link text-left p-2">Schedule</a></li>
+                <li class="nav-item"><a href="regulations.html" class="nav-link text-left p-2">Regulations</a></li>
+                <li class="nav-item"><a href="rules.html" class="nav-link text-left p-2">Rules</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link text-left p-2">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <div id="content">
-        <div class="container-fluid col-md-11 m-auto text-justify">
-            <div class="row">
-                <div class="col-lg-6">
-                    <img src="res/images/examImage.jpeg" alt="via schedule" class="img-fluid">
+    <div id="content" class="container-fluid">
+
+        <section class="row" style="margin-bottom: 20px;">
+            <div id="carouselExampleIndicators" class="carousel slide col-md-6" data-ride="carousel" >
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="res/images/new/web.jpg" alt="First slide" style="width:50%;">
+
+                        <div class="carousel-caption">
+                            <h2>Responsive Web Design</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="res/images/new/business.jpg" alt="Second slide" style="width:50%;">
+
+                        <div class="carousel-caption" style="color: black;">
+                            <h2>Business</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="res/images/new/IoT.png" alt="Third slide" style="width:50%;">
+
+                        <div class="carousel-caption" style="color: black;">
+                            <h2>Internet of Things</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="res/images/new/examImage.jpeg" alt="Third slide" style="width:50%;">
+
+                        <div class="carousel-caption" style="color: black;">
+                            <h2>Exams</h2>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!--<article id="articleIndex">
+                <div>
+                    <img src="res/images/" alt="viaschedule">
                     <div>
                         <h2>About the Viaschedule</h2>
                         <p>Viaschedule is a platform related to exams in via. The exams period bring so much pressure to students in VIA, and some of you might be
                             new in the school.
-                            Viaschedule is the platform that gives you tips, time schedule in ICT, Global Business and Architecture with the given type of exam, and th class.
+                        Viaschedule is the platform that gives you tips, time schedule in ICT, Global Business and Architecture with the given type of exam, and th class.
                         </p>
                     </div>
                     <div>
                         <h2>Actualities</h2>
-                        <p>The schedule will be uptodate the 02/11/2019 according to some modifications in the system.
-                            However, be prepared to start your exam the 01/01/2020.</p>
+                        <p></p>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <h2>Next Exams</h2>
-                    <div class="d-flex flex-column flex-wrap bg-light rounded justify-content-center">
-                        <div class="col-md-10 col-lg-8">
-                            <img src="res/images/ICT.png" alt="ICT" class="img-fluid">
-                            <table class="table table-responsive">
-                                <thead>
-                                <tr>
-                                    <th>Day</th>
-                                    <th>Subject</th>
-                                    <th>Class</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>01/01/2020</td><td>RWD</td><td>A.303</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="col-md-10 col-lg-8">
-                            <img src="res/images/business.jpg" alt="Global Business" class="img-fluid">
-                            <table class="table table-responsive">
-                                <thead>
-                                <tr>
-                                    <th>Day</th>
-                                    <th>Subject</th>
-                                    <th>Class</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>01/01/2020</td><td>MST</td><td>E.303</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="col-md-10 col-lg-8">
-                            <img src="res/images/civil%20engineering.jpg" alt="Civil Engineering" class="img-fluid">
-                            <table class="table table-responsive">
-                                <thead>
-                                <tr>
-                                    <th>Day</th>
-                                    <th>Subject</th>
-                                    <th>Class</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>01/01/2020</td><td>MST</td><td>E.303</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+
+            </article>-->
+
+
+            <aside class="col-md-3">
+                <img src="res/images/new/schedule.jpg" alt="ICT" style="width: 100%">
+                <div class="caption">
+                    <h2>About Viaschedule</h2>
+                    <p>Viaschedule is a platform related to exams in via. The exams period bring so much pressure to students in VIA, and some of you might be
+                        new in the school.
+                        Viaschedule is the platform that gives you tips, time schedule with the given type of exam</p>
                 </div>
+            </aside>
+            <aside class="col-md-3">
+                <img src="res/images/new/actualites.jpg" alt="ICT" style="width: 100%">
+                <div class="caption">
+                    <h2>Actualities</h2>
+                    <p>The schedule will be uptodate the 02/11/2019 according to some modifications in the system.
+                        However, be prepared to start your exam the 01/01/2020.</p>
+                </div>
+            </aside>
+        </section>
+        <section class="row">
+            <div class="col-md-4">
+                <img src="res/images/new/business.jpg" alt="Global Business" style="width: 100%">
+                <table cellspacing="0" style="width: 100%">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Subject</th>
+                            <th>Class</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01/01/2020</td><td>BSN</td><td>E.303</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-        </div>
+            <div class="col-md-4">
+                <img src="res/images/new/ICT.png" alt="Internet of Things" style="width: 100%">
+                <table cellspacing="0" style="width: 100%">
+                    <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Subject</th>
+                        <th>Class</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>12/01/2020</td><td>ICT</td><td>D.205</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-4">
+                <img src="res/images/new/web.jpg" alt="Web design" style="width: 100%">
+                <table cellspacing="0" style="width: 100%">
+                    <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Subject</th>
+                        <th>Class</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>06/01/2020</td><td>RWD</td><td>A.202</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
     </div>
 
 
     <footer class="container-fluid bg-dark text-light">
-        <div class="d-flex flex-column flex-md-row flex-md-wrap justify-content-between p-3">
-            <section class="col-12 col-md-5 col-lg-4">
+        <div class="d-flex flex-column flex-md-row justify-content-between p-3">
+            <section>
                 <h2>Contact</h2>
                 <p><a href="mailto:via@securemail.via.dk" target="_blank" class="text-decoration-none text-light small">Mail: via@securemail.via.dk</a></p>
                 <p class="small">Phone: 87 55 00 20</p>
@@ -122,18 +184,18 @@
                 <p><a href="https://twitter.com/viauniversity?lang=en" target="_blank" class="text-decoration-none text-light small">Twitter</a></p>
                 <p><a href="https://www.instagram.com/viauniversitycollege/?hl=en" target="_blank" class="text-decoration-none text-light small">Instagram</a></p>
             </section>
-            <section class="col-12 col-md-5 col-lg-4">
+            <section>
                 <h2>Important links</h2>
                 <p><a href="https://via.itslearning.com/" target="_blank" class="text-decoration-none text-light small">ITS</a></p>
                 <p><a href="https://studienet.via.dk/" target="_blank" class="text-decoration-none text-light small">Studynet</a></p>
                 <p><a href="https://print.via.dk" target="_blank" class="text-decoration-none text-light small">Viaprint</a></p>
                 <P><a href="https://outlook.office365.com" target="_blank" class="text-decoration-none text-light small">My mail</a></P>
             </section>
-            <section class="col-12 col-md-5 col-lg-4 text-lg-right">
+            <section>
                 <p>IT-support</p>
                 <p>&copy; 2019	OurWebSite, Inc</p>
             </section>
         </div>
-    </footer>
-</body>
+
+    </footer></body>
 </html>
