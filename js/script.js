@@ -28,8 +28,13 @@ $(window).dblclick(function(event){
 $(window).click(function(event){
     var x = event.pageX;
     var y = event.pageY;
+
+    var imgOrangeFish = $('#fish1Id');
+    var width = imgOrangeFish.width();
+    var height = imgOrangeFish.height();
+
     console.log(x+" "+y);
-    $("#fish1Id").animate({top: y-125, left: x-125});
+    imgOrangeFish.animate({top: y-(height/2), left: x-(width/2)});
 });
 
 
