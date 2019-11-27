@@ -82,6 +82,40 @@ function myRandMove(elt, id, delay = 700){
         y = "0";
     }
     elt.animate({top: strY+y, left: strX+x}, "slow", easing[getRandom(1)], setTimeout(function () {myRandMove(elt);}, delay));
-
-
 }
+
+function startBubble(object, delay){
+    object.stop(true);
+
+    var x = getRandom(ww - object.width());
+    var y = wh + object.height();
+    object.css({left: x, top: y});
+
+    var delayInMilliseconds = getRandom(delay);
+
+    setTimeout(function() {
+        object.animate({top: 0 - object.height()},
+                5000,
+                easing[getRandom(0)],
+                function(){startBubble(object);});
+            }, delayInMilliseconds);
+}
+
+function bubbleClick(object, delay){
+    object.click(function(){
+        object.stop(true)
+            .fadeOut("slow", function(){
+                startBubble(object, delay);
+                object.fadeIn(0)
+        });
+    });
+}
+
+startBubble($("#bubble1Id"), 2000);
+bubbleClick($("#bubble1Id"), 2000);
+
+startBubble($("#bubble2Id"), 1000);
+bubbleClick($("#bubble2Id"), 1000);
+
+startBubble($("#bubble3Id"), 2500);
+bubbleClick($("#bubble3Id"), 2500);
