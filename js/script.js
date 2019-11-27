@@ -111,6 +111,12 @@ function bubbleClick(object, delay){
     });
 }
 
+$(".bubbleSmallClass").each(function(){
+    $(this).width($(this).width() * 0.5);
+    $(this).height($(this).height() * 0.5);
+    startBubble($(this), 2000);
+})
+
 startBubble($("#bubble1Id"), 2000);
 bubbleClick($("#bubble1Id"), 2000);
 
