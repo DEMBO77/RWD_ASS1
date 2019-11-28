@@ -72,6 +72,19 @@ $(window).click(function (event) {
 });
 
 
+
+$("#fish2Id").hover(function () {
+    $("#fish2Id").stop(true);
+    $("#fish2Id").animate({top: "+=1"}, "fast", "linear", function () {
+        myRandMove($("#fish2Id"), 1, 700);
+    });
+}, function () {
+    $("#fish2Id").animate({top: "+=1"}, "slow", "linear", function () {
+        myRandMove($("#fish2Id"), 1, 700);
+    });
+});
+
+
 function myRandMove(elt, id, delay) {
 
     x = Math.floor(Math.random()* (ww-elt.width()));
