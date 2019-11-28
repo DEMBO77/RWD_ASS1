@@ -3,8 +3,59 @@ var easing = ["linear", "swing"];
 var toRight = [true, true];
 var ww = $(window).width();
 var wh = $(window).height();
+$(document).ready(function () {
+    $("#fish1Id").animate({top: "+=1"}, "slow", "linear", function () {
+        myRandMove($("#fish1Id"), 0, 700);
+    });
 
-$(window).click(function(event){
+    $("#fish2Id").animate({top: "+=1"}, "slow", "linear", function () {
+        myRandMove($("#fish2Id"), 1, 700);
+    });
+
+
+    bubbleMove($("#bubble1Id"));
+    bubbleMove($("#bubble2Id"));
+    bubbleMove($("#bubble3Id"));
+
+    loadImage("images/spongebob.png", 100, 100,  "spongebob", $("body"));
+    $("#spongebob").offset({top: wh - $(this).height()});
+
+
+});
+
+
+$(window).dblclick(function(event){
+    var x = event.pageX;
+    var y = event.pageY;
+    console.log(x+" "+y);
+
+    var imgOrangeFish = $('#fish1Id');
+    var pos = imgOrangeFish.position();
+    var width = imgOrangeFish.width();
+    var height = imgOrangeFish.height();
+    if ((pos.left<x) && (x<(pos.left+width))){
+        if (((pos.top+height)>y) && (y>pos.top)){
+
+            imgOrangeFish.width(350);
+            imgOrangeFish.height(350);
+            setTimeout(function(){
+                imgOrangeFish.width(250);
+                imgOrangeFish.height(250);
+                },1000);
+        }
+    }
+});
+
+function loadImage(path,w, h, id, target) {
+    $('<img src="'+ path +'" id="'+ id +'">').on('load', function() {
+        $(this).width(w).height(h);
+        console.log(target);
+        target.insertBefore($(this), target.childNodes[0] );
+    });
+}
+
+
+$(window).click(function (event) {
     var coord = getPosition(event.pageX, event.pageY, $("#fish1Id"));
     var x = coord[0], y = coord[1];
     $("#fish1Id").stop(true);
@@ -15,73 +66,77 @@ $(window).click(function(event){
         $('#fish1Id').css({'transform': 'scale(1, 1)'});
         toRight[0] = true;
     }
-    $("#fish1Id").animate({top: y, left: x}, "slow", "linear", function () {
-        myRandMove($("#fish1Id"), 0);
+    $("#fish1Id").animate({top: y, left: x}, 1000, easing[getRandom(1)], function () {
+        myRandMove($("#fish1Id"), 0, 700);
     });
 });
 
+
+function myRandMove(elt, id, delay) {
+
+    x = Math.floor(Math.random()* (ww-elt.width()));
+    y = Math.floor(Math.random()* (wh-elt.height()));
+    var strX = (x <= elt.offset().left)? "-=":"+=", strY = (x <= elt.offset().left)? "-=":"+=";
+
+    if(x <= elt.offset().left && toRight[id] === true    ){
+        elt.css({'transform': 'scale(-1, 1)'});
+        toRight[id] = false;
+    }
+    if(x >= elt.offset().left && !toRight[id]){
+        elt.css({'transform': 'scale(1, 1)'});
+        toRight[id] = true;
+    }
+    elt.animate({top: y, left: x}, 5000, easing[getRandom(1)], function () {
+        myRandMove(elt, id, delay);
+    });
+}
+
+/*Return position only for x and y as pageX and pageY*/
 function getPosition(x, y, elt){
     if((x + elt.width()/2) >= ww){
-        x = ww - $("#fish1Id").width()/2
+        x = ww - elt.width()/2
     }
     if(y+elt.height()/2 >= $(window).height()){
-        y = wh - $("#fish1Id").height()/2
+        y = wh - elt.height()/2
     }
 
     if(x-elt.width()/2 <= 0){
-        x = $("#fish1Id").width()/2
+        x = elt.width()/2
     }
 
     if(y - elt.height()/2 <= 0){
-        y = $("#fish1Id").height()/2
+        y = elt.height()/2
     }
     x -= elt.width()/2;
     y -= elt.height()/2;
     return [x, y];
 }
 
+$("#bubble1Id, #bubble2Id, #bubble3Id").click(function () {
+   bubbleClicked($(this));
+});
+
+function bubbleClicked(bubble){
+    bubble.stop(true).fadeOut();
+    bubble.offset({top: wh+bubble.height()}).fadeIn();
+    bubbleMove(bubble);
+}
+
+
+function bubbleMove(bubble){
+    x = Math.floor(Math.random()*(ww-bubble.width()));
+    bubble.offset({top: wh, left: x});
+
+    bubble.animate({left: x, top: -bubble.height()}, 10000+getRandom(5)*1000, easing[getRandom(1)], function () {
+       bubbleMove(bubble);
+    });
+}
+
+/*The given value is included in the random*/
 function getRandom(value){
     return Math.floor(Math.random()*(value+1));
 }
 
-myRandMove($("#fish1Id"), 0, 700);
-myRandMove($("#fish2Id"), 1, 550);
-
-function myRandMove(elt, id, delay = 700){
-    var moveX = [10, 35, 50, 75, 100, 150, 300, 400][getRandom(7)] , moveY = [10, 20, 30, 100, 200][getRandom(4)];
-    var direction = [-1, 0, 1];
-    var dirX = direction[getRandom(2)], dirY = direction[getRandom(2)];
-
-    var strX = (dirX<0)?"-=":"+=", strY = (dirY<0)?"-=":"+=";
-    if(dirX === -1){
-        elt.css({'transform': 'scale(-1, 1)'});
-        toRight[id] = false;
-    }else if(dirX === 1){
-        elt.css({'transform': 'scale(1, 1)'});
-        toRight[id] = true;
-    }
-
-    var xCoord = elt.offset().left, yCoord = elt.offset().top, x, y;
-    if(dirX !== 0){
-        if(dirX === 1){
-            x = (xCoord+elt.width()+moveX >= ww)?(ww - elt.width()-xCoord).toString():moveX.toString();
-        }else{
-            x = (xCoord-moveX <= 0)?xCoord:moveX.toString();
-        }
-    }else{
-        x = "0";
-    }
-
-    if(dirY !== 0){
-        if(dirY === 1){
-            y = (yCoord+elt.height()+moveY >= wh)?(wh-elt.height()-yCoord).toString():moveY.toString();
-        }else{
-            y = (yCoord-moveY <= 0)?yCoord:moveY.toString();
-        }
-    }else{
-        y = "0";
-    }
-    elt.animate({top: strY+y, left: strX+x}, "slow", easing[getRandom(1)], setTimeout(function () {myRandMove(elt);}, delay));
 
 
-}
+
