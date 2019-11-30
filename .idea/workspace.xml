@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b041ca42-984d-48dc-8ad7-b14ed694a380" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/images/spongebob.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/hippocampe.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/jellyfish.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/spongebob.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/spongebob.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,15 +27,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-121" />
+            <state relative-caret-position="356">
+              <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+            </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+            <state relative-caret-position="323">
+              <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -48,8 +55,19 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="51" column="26" lean-forward="true" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
+            <state relative-caret-position="223">
+              <caret line="81" column="41" selection-start-line="81" selection-start-column="41" selection-end-line="81" selection-end-column="41" />
+              <folding>
+                <element signature="e#420#995#0" />
+                <element signature="e#1082#1648#0" />
+                <element signature="e#2394#3117#0" />
+                <element signature="n#!!block;n#myRandMove#0" />
+                <element signature="e#2886#2894#0" />
+                <element signature="n#!!block;n#bubbleMove#0" />
+                <element signature="n#!!block;n#moveSpongeBob#0" />
+                <element signature="n#!!block;n#getRandom#0" />
+                <element signature="n#!!block;n#getPosition#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -77,6 +95,7 @@
       <find>th</find>
       <find>book</find>
       <find>toRi</find>
+      <find>load</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -97,6 +116,7 @@
         <option value="$PROJECT_DIR$/rules.html" />
         <option value="$PROJECT_DIR$/schedule.html" />
         <option value="$PROJECT_DIR$/res/css/style.css" />
+        <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/script.js" />
       </list>
@@ -143,7 +163,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -154,6 +174,7 @@
       <recent name="C:\Users\percu\Downloads\RWD_ASS1\res\images" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\toede\PhpstormProjects\RWD_ASS\images" />
       <recent name="C:\Users\toede\PhpstormProjects\RWD_ASS" />
       <recent name="C:\Users\percu\Downloads\RWD_ASS1\res\audio" />
       <recent name="C:\Users\percu\Downloads\RWD_ASS1\res\images" />
@@ -184,7 +205,7 @@
       <workItem from="1570103389622" duration="273000" />
       <workItem from="1570104364387" duration="794000" />
       <workItem from="1570268637408" duration="3149000" />
-      <workItem from="1574771174076" duration="42118000" />
+      <workItem from="1574771174076" duration="57255000" />
     </task>
     <task id="LOCAL-00001" summary="Creation of the home page">
       <created>1570111445421</created>
@@ -277,11 +298,18 @@
       <option name="project" value="LOCAL" />
       <updated>1574799534297</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="FIX BUG">
+      <created>1574941773172</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1574941773172</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64140000" />
+    <option name="totallyTimeSpent" value="79277000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -291,7 +319,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49932885" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49932885" weight="0.3286119" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -301,8 +329,8 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50067115" side_tool="true" visible="true" weight="0.3286119" />
-      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49798658" weight="0.30311614" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5033557" side_tool="true" visible="true" weight="0.30311614" />
+      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.4966443" visible="true" weight="0.30311614" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -333,6 +361,14 @@
               </option>
               <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
                 <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
               </option>
             </State>
           </value>
@@ -367,7 +403,8 @@
     <MESSAGE value="files uploaded" />
     <MESSAGE value="red fish on click" />
     <MESSAGE value="random move fish done" />
-    <option name="LAST_COMMIT_MESSAGE" value="random move fish done" />
+    <MESSAGE value="FIX BUG" />
+    <option name="LAST_COMMIT_MESSAGE" value="FIX BUG" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/RWD_ASS1.iml">
@@ -440,22 +477,44 @@
     <entry file="file://$PROJECT_DIR$/images/spongebob.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/images/patrick.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/spongebob3.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/spongebob2.gif">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-121" />
+        <state relative-caret-position="356">
+          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="51" column="26" lean-forward="true" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
+        <state relative-caret-position="223">
+          <caret line="81" column="41" selection-start-line="81" selection-start-column="41" selection-end-line="81" selection-end-column="41" />
+          <folding>
+            <element signature="e#420#995#0" />
+            <element signature="e#1082#1648#0" />
+            <element signature="e#2394#3117#0" />
+            <element signature="n#!!block;n#myRandMove#0" />
+            <element signature="e#2886#2894#0" />
+            <element signature="n#!!block;n#bubbleMove#0" />
+            <element signature="n#!!block;n#moveSpongeBob#0" />
+            <element signature="n#!!block;n#getRandom#0" />
+            <element signature="n#!!block;n#getPosition#0" />
+          </folding>
         </state>
       </provider>
     </entry>
