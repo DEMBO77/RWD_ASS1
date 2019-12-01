@@ -79,6 +79,10 @@ $(window).click(function (event) {
 $("#fish2Id").hover(function () {
     $("#fish2Id").stop(true);
     $("#fish2Id").animate({top: "+=1"}, "fast", "linear", function () {
+        myRandMove($("#fish2Id"), 1, 2500);
+    });
+}, function () {
+    $("#fish2Id").animate({top: "+=1"}, "fast", "linear", function () {
         myRandMove($("#fish2Id"), 1, 5000);
     });
 });
