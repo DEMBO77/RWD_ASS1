@@ -54,7 +54,6 @@ $("#fish1Id").dblclick(function(event){
     $(this).width(350).height(350);
     var imageOrangeFish = $(this);
     setTimeout(function(){
-        console.log(w);
         imageOrangeFish.width(w);
         imageOrangeFish.height(h);
     },1000);
@@ -76,30 +75,46 @@ $(window).click(function (event) {
     });
 });
 
+var isHover = true;
 $("#fish2Id").hover(function () {
-    $("#fish2Id").stop(true);
-    $("#fish2Id").animate({top: "+=1"}, "fast", "linear", function () {
-        myRandMove($("#fish2Id"), 1, 5000);
-    });
+    if(isHover){
+        var x = Math.floor(Math.random()* (ww-$(this).width())), y = Math.floor(Math.random()* (wh-$(this).height()));
+
+        if(x <= $(this).offset().left && toRight[1] === true    ){
+            $(this).css({'transform': 'scale(-1, 1)'}); toRight[1] = false;
+        }
+        if(x >= $(this).offset().left && !toRight[1]){
+            $(this).css({'transform': 'scale(1, 1)'}); toRight[1] = true;
+        }
+        $(this).stop(true);
+        $(this).animate({top: y, left: x}, 2000, "swing", function () {
+            isHover = true;
+            myRandMove($("#fish2Id"), 1, 5000);
+        });
+        isHover = false;
+    }
+
 });
 
 $("#jellyfish").click(function () {
     $(this).stop(true);
     $(this).animate({top: wh/2 - $(this).height()/2, left: ww/2 - $(this).width()/2+wh/2}, 1000, "linear", function () {
+
         moveJellyInCircle($(this), 0, wh/2 - $(this).height()/2);
     });
-
     function moveJellyInCircle(j, t, r) {
-        t += 0.05;
+        t -= 0.05;
+        j.css('-webkit-transform', 'rotate(' + t*180/Math.PI+ 'deg)');
         var xcenter = ww/2 - j.width()/2;
         var ycenter = wh/2 - j.height()/2;
         var newLeft = Math.floor(xcenter + (r * Math.cos(t)));
         var newTop = Math.floor(ycenter + (r * Math.sin(t)));
-        if(t < Math.PI * 2){
+        if(t > -Math.PI * 2){
             j.animate({top: newTop, left: newLeft}, 15, function() {
                 moveJellyInCircle(j, t, r);
             });
         }else{
+            j.css('-webkit-transform', 'rotate(' + 0+ 'deg)');
             myRandMove(j, null, 7000);
         }
     }
@@ -108,9 +123,7 @@ $("#jellyfish").click(function () {
 
 function myRandMove(elt, id, timeA) {
 
-    x = Math.floor(Math.random()* (ww-elt.width()));
-    y = Math.floor(Math.random()* (wh-elt.height()));
-    var strX = (x <= elt.offset().left)? "-=":"+=", strY = (x <= elt.offset().left)? "-=":"+=";
+    var x = Math.floor(Math.random()* (ww-elt.width())), y = Math.floor(Math.random()* (wh-elt.height()));
 
     if(id!=null){
         if(x <= elt.offset().left && toRight[id] === true    ){
@@ -142,7 +155,7 @@ function bubbleMove(bubble){
 
 function moveSpongeBob(bob){
     if(bob.offset().left === ww + bob.width()){
-        bob.animate({left: - bob.width()*2}, 10000, easing[getRandom(1)], function () {;
+        bob.animate({left: - bob.width()*2}, 10000, easing[getRandom(1)], function () {
             setTimeout(function () {
                 moveSpongeBob(bob);
             }, 5000);
