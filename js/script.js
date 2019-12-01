@@ -46,6 +46,11 @@ $(document).ready(function () {
     $("#jellyfish").animate({left : "+=20"}, "slow", "linear", function () {
         myRandMove($(this), null, 7000);
     });
+
+    $("#nemo").animate({left : "+=20"}, "slow", "linear", function () {
+        myRandMove($(this), 3, 8000);
+        $("#shark").hide();
+    });
 });
 
 
@@ -107,7 +112,17 @@ $("#jellyfish").click(function () {
             myRandMove(j, null, 7000);
         }
     }
+});
 
+$("#nemo").dblclick(function(event){
+    var w = $(this).width(), h = $(this).height();
+    $("#shark").show()
+    $("#nemo").hide();
+    setTimeout(function(){
+        console.log(w);
+        $("#shark").hide();
+        $("#nemo").show();
+    },1000);
 });
 
 function myRandMove(elt, id, timeA) {
