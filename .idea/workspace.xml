@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b041ca42-984d-48dc-8ad7-b14ed694a380" name="Default Changelist" comment="Change speed blue fish hover">
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/nemo.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/shark.png" />
+    <list default="true" id="b041ca42-984d-48dc-8ad7-b14ed694a380" name="Default Changelist" comment="Nemo function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,8 +17,8 @@
       <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="34" column="19" lean-forward="false" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+            <state relative-caret-position="407">
+              <caret line="36" column="22" lean-forward="false" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -204,7 +200,7 @@
       <workItem from="1570104364387" duration="794000" />
       <workItem from="1570268637408" duration="3149000" />
       <workItem from="1574771174076" duration="57255000" />
-      <workItem from="1575212970425" duration="5078000" />
+      <workItem from="1575212970425" duration="5815000" />
     </task>
     <task id="LOCAL-00001" summary="Creation of the home page">
       <created>1570111445421</created>
@@ -311,11 +307,18 @@
       <option name="project" value="LOCAL" />
       <updated>1575213585873</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Nemo function">
+      <created>1575218959385</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1575218959385</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84355000" />
+    <option name="totallyTimeSpent" value="85092000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -400,7 +403,8 @@
     <MESSAGE value="FIX BUG" />
     <MESSAGE value="Default Changelist" />
     <MESSAGE value="Change speed blue fish hover" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change speed blue fish hover" />
+    <MESSAGE value="Nemo function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nemo function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -490,8 +494,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="34" column="19" lean-forward="false" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+        <state relative-caret-position="407">
+          <caret line="36" column="22" lean-forward="false" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
           <folding />
         </state>
       </provider>
