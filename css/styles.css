@@ -35,8 +35,8 @@ img {
     display: block;
     margin-left: 25%;
     margin-right: 25%;
-    width: 1000px;
-    height: 1000px;
+    width: 50%;
+    height: auto;
 }
 
 #nemo {

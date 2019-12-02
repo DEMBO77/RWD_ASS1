@@ -1,6 +1,6 @@
 var speed = ["slow", "fast"];
 var easing = ["linear", "swing"];
-var toRight = [true, true, true];
+var toRight = [true, true, true, true];
 var ww = $(window).width();
 var wh = $(window).height();
 
@@ -8,6 +8,10 @@ $(document).ready(function () {
     $(".bubbleClass").each(function () {
         $(this).css({'z-index' : '1'});
     });
+
+    $("#shark").hide();
+
+
 
     $(".bubbleSmallClass").each(function(){
         $(this).width($(this).width() * 0.2);
@@ -46,7 +50,13 @@ $(document).ready(function () {
     $("#jellyfish").animate({left : "+=20"}, "slow", "linear", function () {
         myRandMove($(this), null, 7000);
     });
+
+    $("#nemo").animate({top: "+=1"}, "slow", "linear", function () {
+        myRandMove($(this), null, 8000);
+    });
 });
+
+
 
 
 $("#fish1Id").dblclick(function(event){
@@ -74,7 +84,6 @@ $(window).click(function (event) {
         myRandMove($("#fish1Id"), 0, 5000);
     });
 });
-
 var isHover = true;
 $("#fish2Id").hover(function () {
     if(isHover){
@@ -197,7 +206,16 @@ function getPosition(x, y, elt){
 }
 
 
-
+$("#nemo").dblclick(function(event){
+    var w = $(this).width(), h = $(this).height();
+    $("#shark").show()
+    $("#nemo").hide();
+    setTimeout(function(){
+        console.log(w);
+        $("#shark").hide();
+        $("#nemo").show();
+    },1000);
+});
 
 
 
